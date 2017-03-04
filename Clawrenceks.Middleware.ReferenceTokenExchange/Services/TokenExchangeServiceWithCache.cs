@@ -38,7 +38,7 @@ namespace ReferenceTokenExchange.Services
             if (cachedToken.AccessTokenExpiryTime < DateTimeOffset.UtcNow)
             {
                 _logger.LogInformation("Expired token found in cache");
-                _cache.Remove(cachedToken);
+                _cache.RemoveToken(cachedToken);
 
                 var tokenResult = await PerformOnlineTokenExchange(referenceToken, options);
 

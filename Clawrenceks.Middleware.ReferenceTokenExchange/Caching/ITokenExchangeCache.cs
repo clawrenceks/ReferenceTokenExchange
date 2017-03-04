@@ -8,6 +8,6 @@ namespace ReferenceTokenExchange.Caching
 
         void AddToken(TokenExchangeResult tokenResult);
 
-        void Remove(TokenExchangeResult tokenResult);
+        void RemoveToken(TokenExchangeResult tokenResult);
     }
 }

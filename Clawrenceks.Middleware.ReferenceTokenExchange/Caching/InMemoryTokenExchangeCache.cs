@@ -18,7 +18,7 @@ namespace ReferenceTokenExchange.Caching
             _tokens.Add(tokenResult);
         }
 
-        public void Remove(TokenExchangeResult tokenResult)
+        public void RemoveToken(TokenExchangeResult tokenResult)
         {
             _tokens.Remove(tokenResult);
         }
