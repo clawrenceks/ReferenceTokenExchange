@@ -1,12 +1,12 @@
 ﻿using Microsoft.Extensions.Logging;
-using ReferenceTokenExchange.Caching;
-using ReferenceTokenExchange.Models;
-using ReferenceTokenExchange.Services.Interfaces;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Caching;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces;
 using System;
 using System.Threading.Tasks;
-using ReferenceTokenExchange.Configuration;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Configuration;
 
-namespace ReferenceTokenExchange.Services
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Services
 {
     public class TokenExchangeServiceWithCache : ICachingTokenExchangeService
     {

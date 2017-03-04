@@ -1,8 +1,8 @@
-﻿using ReferenceTokenExchange.Models;
+﻿using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ReferenceTokenExchange.Caching
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Caching
 {
     public class InMemoryTokenExchangeCache : ITokenExchangeCache
     {

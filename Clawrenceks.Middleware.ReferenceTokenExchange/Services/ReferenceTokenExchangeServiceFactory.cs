@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ReferenceTokenExchange.Caching;
-using ReferenceTokenExchange.Configuration;
-using ReferenceTokenExchange.Services.Interfaces;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Caching;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Configuration;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces;
 using System;
 
-namespace ReferenceTokenExchange.Services
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Services
 {
     public class ReferenceTokenExchangeServiceFactory : IReferenceTokenExchangeServiceFactory
     {

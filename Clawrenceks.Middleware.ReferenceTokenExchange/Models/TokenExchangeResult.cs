@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReferenceTokenExchange.Models
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Models
 {
     public class TokenExchangeResult
     {

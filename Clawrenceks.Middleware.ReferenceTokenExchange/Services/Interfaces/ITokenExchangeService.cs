@@ -1,8 +1,8 @@
-﻿using ReferenceTokenExchange.Configuration;
-using ReferenceTokenExchange.Models;
+﻿using Clawrenceks.Middleware.ReferenceTokenExchange.Configuration;
+using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
 using System.Threading.Tasks;
 
-namespace ReferenceTokenExchange.Services.Interfaces
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces
 {
     public interface ITokenExchangeService
     {

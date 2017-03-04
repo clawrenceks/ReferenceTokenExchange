@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ReferenceTokenExchange.Models
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Models
 {
     public class OperationResult
     {

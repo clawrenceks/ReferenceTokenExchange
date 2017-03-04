@@ -1,6 +1,6 @@
-﻿using ReferenceTokenExchange.Models;
+﻿using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
 
-namespace ReferenceTokenExchange.Caching
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Caching
 {
     public interface ITokenExchangeCache
     {

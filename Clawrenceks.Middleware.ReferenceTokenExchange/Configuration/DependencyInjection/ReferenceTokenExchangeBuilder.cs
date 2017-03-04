@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ReferenceTokenExchange.Configuration
+namespace Clawrenceks.Middleware.ReferenceTokenExchange.Configuration
 {
     public class ReferenceTokenExchangeBuilder : IReferenceTokenExchangeBuilder
     {
