@@ -10,7 +10,7 @@ The above is desirable as it removes the need for an access token to be issued t
 
 ### Installing & Configuring
 
-ReferenceTokenExchange is distributed as a [NuGet package](https://www.nuget.org/packages/Clawrenceks.Middleware.ReferenceTokenExchange/) and steps for installing and configuring can be seen on the GitHub Wiki. 
+ReferenceTokenExchange is distributed as a [NuGet package](https://www.nuget.org/packages/Clawrenceks.Middleware.ReferenceTokenExchange/) and steps for installing and configuring can be seen on the [GitHub Wiki](https://github.com/clawrenceks/ReferenceTokenExchange/wiki).
 
 ### Platform
 
