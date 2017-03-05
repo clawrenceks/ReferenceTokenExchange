@@ -8,7 +8,7 @@ ReferenceTokenExchange was designed for use in a Microservices Gateway. It suppo
 
 The above is desirable as it removes the need for an access token to be issued to clients of the Microservices gateway, instead allowing reference tokens to be used, which can be revoked more easily than access tokens.  More information on the benefits of reference tokens in Identity Server can be found [here](https://leastprivilege.com/2015/11/25/reference-tokens-and-introspection/).
 
-When configured the ReferenceTokenExchange middleware will take the users inbound Reference Token, exchange it for a JWT with Identity Server (inbuilt caching of JWT's is also supported to reduce round trips to Identity Server for each request) and add the JWT as a HTTP Header on the inbound request so that this can easily be added as an Authorization header for any downstream requests that the Microservices gateway may need to make.
+When configured the ReferenceTokenExchange middleware will take the users inbound Reference Token, exchange it for a JWT with Identity Server and add the JWT as a HTTP Header on the inbound request so that this can easily be added as an Authorization header for any downstream requests that the Microservices gateway may need to make. Inbuilt caching of JWT's is also supported to reduce round trips to Identity Server for each request.  This process allows downstream Microservices to use a JWT for Authorization, without the JWT being exposed to public clients.
 
 ### Installing & Configuring
 
