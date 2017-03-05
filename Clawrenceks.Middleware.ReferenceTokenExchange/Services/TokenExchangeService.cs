@@ -1,12 +1,12 @@
 ﻿using IdentityModel.Client;
 using Microsoft.Extensions.Logging;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Configuration;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces;
+using Clawrenceks.ReferenceTokenExchange.Configuration;
+using Clawrenceks.ReferenceTokenExchange.Models;
+using Clawrenceks.ReferenceTokenExchange.Services.Interfaces;
 using System;
 using System.Threading.Tasks;
 
-namespace Clawrenceks.Middleware.ReferenceTokenExchange.Services
+namespace Clawrenceks.ReferenceTokenExchange.Services
 {
     public class TokenExchangeService : ITokenExchangeService
     {

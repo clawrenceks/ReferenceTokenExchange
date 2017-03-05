@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Caching;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Services;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces;
+using Clawrenceks.ReferenceTokenExchange.Caching;
+using Clawrenceks.ReferenceTokenExchange.Services;
+using Clawrenceks.ReferenceTokenExchange.Services.Interfaces;
 
-namespace Clawrenceks.Middleware.ReferenceTokenExchange.Configuration
+namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
     public static class ReferenceTokenExchangeBuilderExtensions
     {

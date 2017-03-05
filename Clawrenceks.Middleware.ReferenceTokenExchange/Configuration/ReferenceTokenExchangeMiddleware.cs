@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Models;
-using Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces;
+using Clawrenceks.ReferenceTokenExchange.Models;
+using Clawrenceks.ReferenceTokenExchange.Services.Interfaces;
 using System.Threading.Tasks;
 
-namespace Clawrenceks.Middleware.ReferenceTokenExchange.Configuration
+namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
     public class ReferenceTokenExchangeMiddleware
     {

@@ -1,4 +1,4 @@
-﻿namespace Clawrenceks.Middleware.ReferenceTokenExchange.Services.Interfaces
+﻿namespace Clawrenceks.ReferenceTokenExchange.Services.Interfaces
 {
     interface ICachingTokenExchangeService : ITokenExchangeService
     {

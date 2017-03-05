@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 
-namespace Clawrenceks.Middleware.ReferenceTokenExchange.Configuration
+namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
     public static class MiddlewareExtensions
     {

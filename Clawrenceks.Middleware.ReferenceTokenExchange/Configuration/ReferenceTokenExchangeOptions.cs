@@ -1,4 +1,4 @@
-﻿namespace Clawrenceks.Middleware.ReferenceTokenExchange.Configuration
+﻿namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
     public class ReferenceTokenExchangeOptions
     {
