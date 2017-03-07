@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clawrenceks.Middleware.ReferenceTokenExchange", "Clawrenceks.Middleware.ReferenceTokenExchange\Clawrenceks.Middleware.ReferenceTokenExchange.csproj", "{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}"
 EndProject
@@ -17,16 +17,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x64.ActiveCfg = Debug|x64
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x64.Build.0 = Debug|x64
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x86.ActiveCfg = Debug|x86
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x86.Build.0 = Debug|x86
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Debug|x86.Build.0 = Debug|Any CPU
 		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x64.ActiveCfg = Release|x64
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x64.Build.0 = Release|x64
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x86.ActiveCfg = Release|x86
-		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x86.Build.0 = Release|x86
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x64.Build.0 = Release|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C0B7552-6FA6-49FC-A22F-9AD5AE3016D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
