@@ -1,4 +1,6 @@
-﻿namespace Clawrenceks.ReferenceTokenExchange.Configuration
+﻿using System.Net.Http;
+
+namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
     public class ReferenceTokenExchangeOptions
     {
@@ -14,5 +16,7 @@
         public string GrantType { get; set; }
         public string Scope { get; set; }
         public bool EnableCaching { get; set; } = false;
+        public HttpMessageHandler HttpHandler { get; set; } = new HttpClientHandler();
+
     }
 }
