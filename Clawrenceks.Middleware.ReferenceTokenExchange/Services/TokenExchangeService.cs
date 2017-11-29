@@ -30,7 +30,7 @@ namespace Clawrenceks.ReferenceTokenExchange.Services
             };
 
             var identityServer = await DiscoverIdentityServerAsync(options.IdentityServerRootUrl);
-            var client = new TokenClient(identityServer.TokenEndpoint, options.ClientId, options.ClientSecret);
+            var client = new TokenClient(identityServer.TokenEndpoint, options.ClientId, options.ClientSecret, options.HttpHandler);
 
             _logger.LogInformation($"Requesting token exchange from Identity Server: {identityServer.TokenEndpoint}");
             var tokenResponse = await client.RequestCustomGrantAsync(options.GrantType, options.Scope, payload);
