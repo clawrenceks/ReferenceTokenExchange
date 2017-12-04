@@ -5,6 +5,7 @@ using Clawrenceks.ReferenceTokenExchange.Models;
 using Clawrenceks.ReferenceTokenExchange.Services.Interfaces;
 using System;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Clawrenceks.ReferenceTokenExchange.Services
 {
@@ -29,7 +30,7 @@ namespace Clawrenceks.ReferenceTokenExchange.Services
                 token = referenceToken
             };
 
-            var identityServer = await DiscoverIdentityServerAsync(options.IdentityServerRootUrl);
+            var identityServer = await DiscoverIdentityServerAsync(options.IdentityServerRootUrl, options.RequireHttpsEndpoints, options.AdditionalEndpointBaseAddresses);
             var client = new TokenClient(identityServer.TokenEndpoint, options.ClientId, options.ClientSecret, options.HttpHandler);
 
             _logger.LogInformation($"Requesting token exchange from Identity Server: {identityServer.TokenEndpoint}");
@@ -51,9 +52,11 @@ namespace Clawrenceks.ReferenceTokenExchange.Services
             return result;
         }
 
-        private async Task<DiscoveryResponse> DiscoverIdentityServerAsync(string identityServerRootUrl)
+        private async Task<DiscoveryResponse> DiscoverIdentityServerAsync(string identityServerRootUrl, bool requireHttps, ICollection<string> additionalEndpointBaseAddresses)
         {
             var client = new DiscoveryClient(identityServerRootUrl);
+            client.Policy.RequireHttps = requireHttps;
+            client.Policy.AdditionalEndpointBaseAddresses = additionalEndpointBaseAddresses;
 
             _logger.LogDebug($"Discovering Identity Server metadata from {client.Url}");
             var response = await client.GetAsync();
