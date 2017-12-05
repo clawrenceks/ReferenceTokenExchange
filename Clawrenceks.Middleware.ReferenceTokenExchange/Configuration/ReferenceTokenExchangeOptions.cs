@@ -20,6 +20,7 @@ namespace Clawrenceks.ReferenceTokenExchange.Configuration
         public HttpMessageHandler HttpHandler { get; set; } = new HttpClientHandler();
         public ICollection<string> AdditionalEndpointBaseAddresses { get; set; } = new List<string>();
         public bool RequireHttpsEndpoints { get; set; } = true;
+        public bool UpdateAuthorizationHeader { get; set; } = false;
 
     }
 }

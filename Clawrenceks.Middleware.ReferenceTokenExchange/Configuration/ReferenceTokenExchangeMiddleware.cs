@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Clawrenceks.ReferenceTokenExchange.Models;
 using Clawrenceks.ReferenceTokenExchange.Services.Interfaces;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Primitives;
 
 namespace Clawrenceks.ReferenceTokenExchange.Configuration
 {
@@ -34,6 +35,15 @@ namespace Clawrenceks.ReferenceTokenExchange.Configuration
                 var tokenResponse = await tokenExchangeService.ExchangeTokenAsync(referenceToken, _options);
 
                 context.Request.Headers.Add(_options.DelegationTokenHeaderName, tokenResponse.AccessToken);
+                
+                if (_options.UpdateAuthorizationHeader)
+                {
+                    context.Request.Headers.Remove("Authorization");
+
+                    context.Request.Headers.Add("Authorization", StringValues.Concat(new StringValues("Bearer "),
+                        new StringValues(tokenResponse.AccessToken)));
+                }
+
             }
 
             await _next.Invoke(context);            
