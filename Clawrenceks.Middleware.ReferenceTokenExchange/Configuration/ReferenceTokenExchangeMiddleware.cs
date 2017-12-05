@@ -40,8 +40,8 @@ namespace Clawrenceks.ReferenceTokenExchange.Configuration
                 {
                     context.Request.Headers.Remove("Authorization");
 
-                    context.Request.Headers.Add("Authorization", StringValues.Concat(new StringValues("Bearer "),
-                        new StringValues(tokenResponse.AccessToken)));
+                    var authorizationHeader = "Bearer " + tokenResponse.AccessToken;                
+                    context.Request.Headers.Add("Authorization", new StringValues(authorizationHeader));
                 }
 
             }
