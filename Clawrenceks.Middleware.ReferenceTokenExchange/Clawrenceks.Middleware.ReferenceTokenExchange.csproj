@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Version>2.0.2</Version>
+    <Version>3.0.0</Version>
     <Description>ASP.Net Core middleware which exchanges reference tokens issued by Identity Server 4 for a JWT to be used in calls to downstream services.</Description>
     <PackageProjectUrl>https://github.com/clawrenceks/ReferenceTokenExchange</PackageProjectUrl>
     <RepositoryUrl>https://github.com/clawrenceks/ReferenceTokenExchange</RepositoryUrl>
@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IdentityModel" Version="2.16.0" />
+    <PackageReference Include="IdentityModel" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
