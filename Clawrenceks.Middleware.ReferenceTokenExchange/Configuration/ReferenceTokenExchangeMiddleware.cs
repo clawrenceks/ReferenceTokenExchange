@@ -31,19 +31,26 @@ namespace Clawrenceks.ReferenceTokenExchange.Configuration
 
             if (!tokenParseResult.IsError)
             {
-                var referenceToken = tokenParseResult.Result;
-                var tokenResponse = await tokenExchangeService.ExchangeTokenAsync(referenceToken, _options);
+                var token = tokenParseResult.Result;
 
-                context.Request.Headers.Add(_options.DelegationTokenHeaderName, tokenResponse.AccessToken);
-                
-                if (_options.UpdateAuthorizationHeader)
+                if (token.Contains("."))
                 {
-                    context.Request.Headers.Remove("Authorization");
-
-                    var authorizationHeader = "Bearer " + tokenResponse.AccessToken;                
-                    context.Request.Headers.Add("Authorization", new StringValues(authorizationHeader));
+                    _logger.LogInformation("The parsed token appears to be a JWT, reference token exchange is not required and will be skipped.");
                 }
+                else
+                {
+                    var tokenExchangeResponse = await tokenExchangeService.ExchangeTokenAsync(token, _options);
 
+                    context.Request.Headers.Add(_options.DelegationTokenHeaderName, tokenExchangeResponse.AccessToken);
+
+                    if (_options.UpdateAuthorizationHeader)
+                    {
+                        context.Request.Headers.Remove("Authorization");
+
+                        var authorizationHeader = "Bearer " + tokenExchangeResponse.AccessToken;
+                        context.Request.Headers.Add("Authorization", new StringValues(authorizationHeader));
+                    }
+                }
             }
 
             await _next.Invoke(context);            
